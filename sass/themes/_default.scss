@@ -1,0 +1,10 @@
+html * {
+    font-family: "Big Shoulders", sans-serif;;
+}
+ 
+body {
+    overflow-x: hidden;
+    @include breakpoint(tablet){
+        margin-right: -173px;
+    }
+} 

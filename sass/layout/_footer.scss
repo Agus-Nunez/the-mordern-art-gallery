@@ -1,0 +1,117 @@
+.footer{
+    @include breakpoint(tablet){
+        margin-right: -124px;
+        padding: 0;
+    }
+    @include breakpoint(desktop){
+        max-width: 100%;
+    }
+    @include breakpoint(largedesktop){
+        max-width: 100%;
+    }
+    .footer__text{
+        width: 107%;
+        background-color: $color-black;
+        padding: 30px 30px;
+
+        @include breakpoint(tablet){
+          display: flex;
+           flex-direction: row;
+            gap: 60px;
+            padding-bottom: 50px;
+            justify-content: start;
+        }
+
+        @include breakpoint(desktop){
+          display: flex;
+           flex-direction: row;
+            gap: 90px;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+        @include breakpoint(largedesktop){
+          display: flex;
+           flex-direction: row;
+            gap: 90px;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+    
+
+        .text-title{
+           font-size: 20px;
+           font-weight: 900;
+           color: $color-white;
+           width: 28.5%;
+           margin-bottom: 30px;
+
+            @include breakpoint(tablet){
+              width:14% ;
+            }
+            @include breakpoint(desktop){
+              max-width:10% ;
+            }
+            @include breakpoint(largedesktop){
+              max-width:10% ;
+            }
+
+        }
+
+        .text-subtitle{
+            font-size: 15px;
+            color:$color-white;
+            font-family: $secondary-font;
+            width: 85%;
+            margin-bottom: 40px;
+            font-weight: 300;
+
+            @include breakpoint(tablet){
+               width: 38%;
+               align-self: flex-end;
+               margin-bottom: 0;
+               padding-top: 10px;
+            }
+            @include breakpoint(desktop){
+               max-width: 37%;
+               align-self: center;
+               margin-bottom: 0;
+               padding-top: 10px;
+            }
+            @include breakpoint(largedesktop){
+               max-width: 37%;
+               align-self: center;
+               margin-bottom: 0;
+               padding-top: 10px;
+            }
+
+        }
+    }
+
+    .icons{
+        display: flex;
+
+        @include breakpoint(tablet){
+            padding-top: 10px;
+        }
+        /*@include breakpoint(desktop){
+            padding-top: 10px;
+        }*/
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+
+            img{
+              text-decoration: none;
+           
+            }
+           
+        }
+
+    }
+
+    
+ 
+}
